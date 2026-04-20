@@ -1,0 +1,93 @@
+import type { Route } from "./+types/home";
+
+export function meta({}: Route.MetaArgs) {
+  return [{ title: "ToQoz.net" }];
+}
+
+export default function Home() {
+  return (
+    <>
+      <section>
+        <h2>Profile</h2>
+        <img
+          id="main_profile_image"
+          alt="ToQoz's profile image"
+          src="/art/images/a-bird.png"
+          width={200}
+        />
+
+        <dl className="profile">
+          <dt>Name</dt>
+          <dd>Takatoshi Matsumoto</dd>
+          <dt>Mail</dt>
+          <dd>
+            <a href="mailto:toqoz403@gmail.com">toqoz403@gmail.com</a>
+          </dd>
+        </dl>
+      </section>
+
+      <section>
+        <h2>Contents</h2>
+        <ul>
+          <li>
+            <a href="/go/pkg">/go/pkg</a>
+          </li>
+          <li>
+            <a href="/art">/art</a>
+          </li>
+          <li>
+            <a href="http://mapping-template-checker.toqoz.net">
+              AWS API Gateway Mapping Template Checker
+            </a>
+          </li>
+          <li>
+            <a href="http://gopwt.toqoz.net">gopwt playground</a>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Activity</h2>
+        <ul>
+          <li>
+            <a href="http://github.com/ToQoz">GitHub</a>
+          </li>
+          <li>
+            <a href="http://gist.github.com/ToQoz">Gist</a>
+          </li>
+          <li>
+            <a href="http://toqoz.hateblo.jp/">Blog</a>
+          </li>
+          <li>
+            <a href="https://twitter.com/ToQoz">Twitter</a>
+          </li>
+          <li>
+            <a href="http://piyos-kitchen.tumblr.com">Cooking</a>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Interested in</h2>
+        <ul>
+          <li>Golang</li>
+          <li>Ruby</li>
+          <li>Rails</li>
+          <li>JavaScript</li>
+          <li>Objective-C</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Vim</li>
+          <li>Haskell</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Want</h2>
+        <a href="http://www.amazon.co.jp/registry/wishlist/3F1SFMFHC5VV3">
+          Amazon wish list
+        </a>
+      </section>
+    </>
+  );
+}
